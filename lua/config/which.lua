@@ -5,7 +5,7 @@ default_options = {noremap = true, silent = true}
 wk.register({
     ga = {"<Plug>(EasyAlign)", "Align", mode = "x"},
     [";"] = {
-        "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'fd', '--hidden', '--type', 'file', '--follow'}})<cr>",
+        "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'fd', '--type', 'file', '--follow'}})<cr>",
         "Find File"
     },
     gd = {"<cmd>lua vim.lsp.buf.definition()<cr>", "Go To Definition"},
