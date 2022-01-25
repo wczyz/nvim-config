@@ -144,12 +144,13 @@ wk.register({
         t = {"<cmd>lua vim.lsp.buf.type_definition()<cr>", "Type Definition"},
         w = {"<cmd>Telescope diagnostics<cr>", "Workspace Diagnostics"}
     },
-    m = {
-        name = "Misc",
-        t = {"<cmd>FloatermNew --autoclose=2<cr>", "New Floaterm"},
-        s = {"<cmd>SymbolsOutline<cr>", "Toggle SymbolsOutline"},
-        z = {"<cmd>ZenMode<cr>", "Toggle ZenMode"}
-    },
+    m = {"<cmd>MarkdownPreview<CR>", "Markdown Preview"},
+    -- m = {
+    --     name = "Misc",
+    --     t = {"<cmd>FloatermNew --autoclose=2<cr>", "New Floaterm"},
+    --     s = {"<cmd>SymbolsOutline<cr>", "Toggle SymbolsOutline"},
+    --     z = {"<cmd>ZenMode<cr>", "Toggle ZenMode"}
+    -- },
     s = {
         name = "Search",
         c = {"<cmd>Telescope colorscheme<cr>", "Colorscheme"},

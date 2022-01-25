@@ -248,6 +248,14 @@ use {"folke/which-key.nvim", event = "VimEnter", config = get_config("which")}
 
 --use("crispgm/telescope-heading.nvim")
 
+use {
+    'iamcco/markdown-preview.nvim',
+    run = 'cd app && yarn install',
+    cmd = 'MarkdownPreview',
+    config = get_config("markdown-preview")
+}
+
+
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim
 -- use 'glepnir/lspsaga.nvim'
