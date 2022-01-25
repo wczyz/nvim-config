@@ -255,6 +255,11 @@ use {
 use {
     "xuhdev/vim-latex-live-preview"
 }
+
+use {
+    "stsewd/isort.nvim"
+}
+
 use {
     'iamcco/markdown-preview.nvim',
     run = 'cd app && yarn install',
