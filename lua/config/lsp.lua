@@ -48,6 +48,16 @@ nvim_lsp.pyright.setup{
 nvim_lsp.hls.setup{
     capabilities = capabilities,
 }
+
+nvim_lsp.texlab.setup{
+    capabilities = capabilities,
+    settings = {
+        texlab = {
+            build = {onSave = true}
+        }
+    }
+}
+
 -- nvim_lsp.ltex.setup{}
 
 -- zk-nvim plugins does it for us

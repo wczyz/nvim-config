@@ -251,6 +251,10 @@ use {"folke/which-key.nvim", event = "VimEnter", config = get_config("which")}
 use {
     "mickael-menu/zk-nvim", config = get_config("zk")
 }
+
+use {
+    "xuhdev/vim-latex-live-preview"
+}
 use {
     'iamcco/markdown-preview.nvim',
     run = 'cd app && yarn install',
