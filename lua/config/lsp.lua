@@ -45,6 +45,13 @@ nvim_lsp.pyright.setup{
     capabilities = capabilities,
 }
 
+-- nvim_lsp.ltex.setup{}
+
+-- zk-nvim plugins does it for us
+-- nvim_lsp.zk.setup{
+--     capabilities = capabilities,
+-- }
+
 
 --local servers = {
 --    "gopls", "bashls", "jedi_language_server", "dockerls",

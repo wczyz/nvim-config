@@ -249,6 +249,9 @@ use {"folke/which-key.nvim", event = "VimEnter", config = get_config("which")}
 --use("crispgm/telescope-heading.nvim")
 
 use {
+    "mickael-menu/zk-nvim", config = get_config("zk")
+}
+use {
     'iamcco/markdown-preview.nvim',
     run = 'cd app && yarn install',
     cmd = 'MarkdownPreview',
