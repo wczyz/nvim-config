@@ -45,6 +45,9 @@ nvim_lsp.pyright.setup{
     capabilities = capabilities,
 }
 
+nvim_lsp.hls.setup{
+    capabilities = capabilities,
+}
 -- nvim_lsp.ltex.setup{}
 
 -- zk-nvim plugins does it for us
