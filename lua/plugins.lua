@@ -269,6 +269,8 @@ use {
     config = get_config("markdown-preview")
 }
 
+use {'ShinKage/idris2-nvim', requires = {'neovim/nvim-lspconfig', 'MunifTanjim/nui.nvim'}}
+
 
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim
