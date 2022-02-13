@@ -132,6 +132,8 @@ use {
 
 use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
 
+use {"nvim-telescope/telescope-file-browser.nvim"}
+
 --use {
     --"akinsho/nvim-bufferline.lua",
     --requires = "kyazdani42/nvim-web-devicons",
