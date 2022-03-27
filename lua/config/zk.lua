@@ -4,25 +4,25 @@ local util = require("zk.util")
 
 zk.setup({
     picker = "telescope",
-  -- create user commands such as :ZkNew
-  create_user_commands = true,
+    -- create user commands such as :ZkNew
+    create_user_commands = true,
 
-  lsp = {
-    -- `config` is passed to `vim.lsp.start_client(config)`
-    config = {
-      cmd = { "zk", "lsp" },
-      name = "zk",
-      -- init_options = ...
-      -- on_attach = ...
-      -- etc, see `:h vim.lsp.start_client()`
-    },
+    lsp = {
+      -- `config` is passed to `vim.lsp.start_client(config)`
+      config = {
+        cmd = { "zk", "lsp" },
+        name = "zk",
+        -- init_options = ...
+        -- on_attach = ...
+        -- etc, see `:h vim.lsp.start_client()`
+      },
 
-    -- automatically attach buffers in a zk notebook that match the given filetypes
-    auto_attach = {
-      enabled = true,
-      filetypes = { "markdown" },
+      -- automatically attach buffers in a zk notebook that match the given filetypes
+      auto_attach = {
+        enabled = true,
+        filetypes = { "markdown" },
+      },
     },
-  },
 })
 
 local function make_edit_fn(defaults, picker_options)

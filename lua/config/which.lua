@@ -224,7 +224,7 @@ wk.register({
         f = {"1z=", "Use 1. correction"},
         l = {"<cmd>Telescope spell_suggest<cr>", "List corrections"},
         c = {"<cmd>lua require('zk').new()<CR>", "Create new note"},
-        n = {"<cmd>ZkNotes<CR>", "List notes"},
+        n = {"<cmd>lua require('zk.commands').get('ZkNotes')()<CR>", "List notes"},
         o = {"<cmd>ZkOrphans<CR>", "List orphans"},
         b = {"<cmd>ZkBacklinks<CR>", "Backlinks"},
         l = {"<cmd>ZkLinks<CR>", "Links"},
