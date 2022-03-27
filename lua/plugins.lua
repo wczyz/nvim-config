@@ -272,6 +272,7 @@ use {
 use {'ShinKage/idris2-nvim', requires = {'neovim/nvim-lspconfig', 'MunifTanjim/nui.nvim'}}
 
 
+use {'whonore/Coqtail'}
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim
 -- use 'glepnir/lspsaga.nvim'
