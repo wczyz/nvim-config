@@ -60,6 +60,8 @@ nvim_lsp.texlab.setup{
 
 require('idris2').setup({})
 
+nvim_lsp.rust_analyzer.setup{}
+
 -- nvim_lsp.ltex.setup{}
 
 -- zk-nvim plugins does it for us
