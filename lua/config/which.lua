@@ -4,17 +4,18 @@ default_options = {noremap = true, silent = true}
 -- register non leader based mappings
 wk.register({
     ga = {"<Plug>(EasyAlign)", "Align", mode = "x"},
-    [";"] = {
-        "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'fd', '--type', 'file', '--follow'}})<cr>",
-        "Find File"
-    },
     gd = {"<cmd>lua vim.lsp.buf.definition()<cr>", "Go To Definition"},
     K = {"<cmd>lua vim.lsp.buf.hover()<cr>", "Hover Commands"},
+    [";"] = {"<cmd>Telescope file_browser path=%:p:h<cr>", "File browser"},
 })
 
 -- Register all leader based mappings
 wk.register({
     ["<Tab>"] = {"<cmd>e#<cr>", "Switch to previously opened buffer"},
+    [";"] = {
+        "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'fd', '--type', 'file', '--follow'}})<cr>",
+        "Find File"
+    },
     b = {
         name = "Buffers",
         b = {
@@ -42,7 +43,6 @@ wk.register({
     f = {
         name = "Files",
         b = {"<cmd>Telescope file_browser<cr>", "File browser"},
-        c = {"<cmd>Telescope file_browser path=%:p:h<cr>", "File browser"},
         f = {
             "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'fd', '--hidden', '--type', 'file', '--follow'}})<cr>",
             "Find File"
