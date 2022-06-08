@@ -276,6 +276,12 @@ use {'whonore/Coqtail'}
 
 use {'sdiehl/vim-ormolu'}
 
+use {'simrat39/rust-tools.nvim'}
+
+-- Debugging
+use {'nvim-lua/plenary.nvim'}
+use {'mfussenegger/nvim-dap'}
+
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim
 -- use 'glepnir/lspsaga.nvim'

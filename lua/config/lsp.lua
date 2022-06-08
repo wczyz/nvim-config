@@ -60,7 +60,7 @@ nvim_lsp.texlab.setup{
 
 require('idris2').setup({})
 
-nvim_lsp.rust_analyzer.setup{}
+require('rust-tools').setup({})
 
 -- nvim_lsp.ltex.setup{}
 
