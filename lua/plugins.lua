@@ -278,7 +278,21 @@ use {'ShinKage/idris2-nvim', requires = {'neovim/nvim-lspconfig', 'MunifTanjim/n
 
 use {'whonore/Coqtail'}
 
-use {'sdiehl/vim-ormolu'}
+use {'vv9k/bogster'}
+
+use {'folke/tokyonight.nvim'}
+
+use {'neovimhaskell/nvim-hs.vim'}
+
+use {'goolord/neovim-haskell-syntax'}
+
+use {'ellisonleao/gruvbox.nvim'}
+
+use {'neovimhaskell/haskell-vim'}
+
+use {'navarasu/onedark.nvim'}
+
+use {'Mofiqul/vscode.nvim'}
 
 use {'simrat39/rust-tools.nvim'}
 
