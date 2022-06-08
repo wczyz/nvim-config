@@ -300,6 +300,8 @@ use {'simrat39/rust-tools.nvim'}
 use {'nvim-lua/plenary.nvim'}
 use {'mfussenegger/nvim-dap'}
 
+use {'nbouscal/vim-stylish-haskell'}
+
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim
 -- use 'glepnir/lspsaga.nvim'
