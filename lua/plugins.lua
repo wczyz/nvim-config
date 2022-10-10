@@ -263,6 +263,10 @@ use {
 }
 
 use {
+    "averms/black-nvim"
+}
+
+use {
     'iamcco/markdown-preview.nvim',
     run = 'cd app && yarn install',
     cmd = 'MarkdownPreview',
