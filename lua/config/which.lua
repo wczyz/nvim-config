@@ -134,7 +134,7 @@ wk.register({
         i = {"<cmd><cr>", "Connected Language Servers"},
         k = {"<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help"},
         l = {
-            "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>",
+            "<cmd>lua vim.diagnostic.open_float()<CR>",
             "Line diagnostics"
         },
         n = {"<cmd>lua vim.diagnostic.goto_next()<cr>", "Next Diagnostic"},
