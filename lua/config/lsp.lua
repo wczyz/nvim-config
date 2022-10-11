@@ -47,11 +47,6 @@ nvim_lsp.pyright.setup{
 
 nvim_lsp.hls.setup{
     capabilities = capabilities,
-    settings = {
-        haskell = {
-            formattingProvider = "stylish-haskell"
-        }
-    }
 }
 
 nvim_lsp.texlab.setup{
