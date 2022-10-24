@@ -40,6 +40,10 @@ wk.register({
             "sort BufferLines automatically by extension"
         }
     },
+    c = {
+        name = "Cornelis",
+        l = {"<cmd>CornelisLoad<cr>", "Load"}
+    },
     f = {
         name = "Files",
         b = {"<cmd>Telescope file_browser<cr>", "File browser"},

@@ -300,6 +300,11 @@ use {'simrat39/rust-tools.nvim'}
 use {'nvim-lua/plenary.nvim'}
 use {'mfussenegger/nvim-dap'}
 
+use {
+    'isovector/cornelis',
+    run = 'stack build'
+}
+
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim
 -- use 'glepnir/lspsaga.nvim'
