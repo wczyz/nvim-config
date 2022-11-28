@@ -42,7 +42,10 @@ wk.register({
     },
     c = {
         name = "Cornelis",
-        l = {"<cmd>CornelisLoad<cr>", "Load"}
+        l = {"<cmd>CornelisLoad<cr>", "Load"},
+        a = {"<cmd>CornelisGoals<cr>", "Show all goals"},
+        s = {"<cmd>CornelisSolve<cr>", "Solve"},
+        c = {"<cmd>CornelisMakeCase<cr>", "Split"},
     },
     f = {
         name = "Files",
