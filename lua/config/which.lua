@@ -84,26 +84,30 @@ wk.register({
             "Checkout commit(for current file)"
         }
     },
-    h = {
-        name = "Harpoon",
-        a = {"<cmd>lua require('harpoon.mark').add_file()<cr>", "Add file"},
-        u = {
-            "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>",
-            "Open Menu"
-        },
-        ["1"] = {
-            "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 1"
-        },
-        ["2"] = {
-            "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 2"
-        },
-        ["3"] = {
-            "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 3"
-        },
-        ["4"] = {
-            "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 4"
-        }
-    },
+    -- h = {
+    --     name = "Haskell Tools",
+    --     a = {"<cmd>lua vim.lsp.codelens.run<cr>"},
+    -- },
+    -- h = {
+    --     name = "Harpoon",
+    --     a = {"<cmd>lua require('harpoon.mark').add_file()<cr>", "Add file"},
+    --     u = {
+    --         "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>",
+    --         "Open Menu"
+    --     },
+    --     ["1"] = {
+    --         "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 1"
+    --     },
+    --     ["2"] = {
+    --         "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 2"
+    --     },
+    --     ["3"] = {
+    --         "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 3"
+    --     },
+    --     ["4"] = {
+    --         "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", "Open File 4"
+    --     }
+    -- },
     j = {
         name = "jump",
         c = {"<cmd>lua require'hop'.hint_char2()<cr>", "2 Chars"},
@@ -137,7 +141,7 @@ wk.register({
         a = {"<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action"},
         d = {"<cmd>lua vim.lsp.buf.definition()<cr>", "Go To Definition"},
         e = {"<cmd>Telescope diagnostics bufnr=0<cr>", "Document Diagnostics"},
-        f = {"<cmd>lua vim.lsp.buf.formatting()<cr>", "Format"},
+        f = {"<cmd>lua vim.lsp.buf.format()<cr>", "Format"},
         i = {"<cmd><cr>", "Connected Language Servers"},
         k = {"<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help"},
         l = {

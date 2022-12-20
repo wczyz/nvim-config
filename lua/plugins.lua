@@ -52,11 +52,11 @@ use {
     requires = {"kyazdani42/nvim-web-devicons", opt = true}
 }
 
-use {
-    "norcalli/nvim-colorizer.lua",
-    event = "BufReadPre",
-    config = get_config("colorizer")
-}
+-- use {
+--     "norcalli/nvim-colorizer.lua",
+--     event = "BufReadPre",
+--     config = get_config("colorizer")
+-- }
 
 use {
     "numToStr/Comment.nvim",
@@ -284,11 +284,13 @@ use {'folke/tokyonight.nvim'}
 
 use {'neovimhaskell/nvim-hs.vim'}
 
-use {'goolord/neovim-haskell-syntax'}
+-- use {'goolord/neovim-haskell-syntax'}
 
 use {'ellisonleao/gruvbox.nvim'}
 
-use {'neovimhaskell/haskell-vim'}
+-- use {'neovimhaskell/haskell-vim', config = get_config("haskell-vim")}
+
+-- use {'alx741/vim-hindent'}
 
 use {'navarasu/onedark.nvim'}
 
@@ -300,9 +302,21 @@ use {'simrat39/rust-tools.nvim'}
 use {'nvim-lua/plenary.nvim'}
 use {'mfussenegger/nvim-dap'}
 
+use {'kana/vim-textobj-user'}
+use {'liuchengxu/vim-which-key'}
 use {
     'isovector/cornelis',
     run = 'stack build'
+}
+
+use {
+    'MrcJkb/haskell-tools.nvim',
+    requires = {
+        'neovim/nvim-lspconfig',
+        'nvim-lua/plenary.nvim',
+        'nvim-telescope/telescope.nvim',
+    },
+    config = get_config("haskell-tools")
 }
 
 -- TODO: ????

@@ -57,6 +57,9 @@ telescope.setup {
             horizontal = {mirror = false},
             vertical = {mirror = true}
         },
+        preview = {
+            treesitter = false,
+        },
         file_sorter = require"telescope.sorters".get_fzf_sorter,
         generic_sorter = require"telescope.sorters".get_fzf_sorter,
         winblend = 0,
