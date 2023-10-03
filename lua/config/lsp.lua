@@ -53,7 +53,8 @@ local ht = require('haskell-tools')
 local def_opts = { noremap = true, silent = true, }
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
-ht.setup {
+vim.g.haskell_tools = {
+  ---@type HaskellLspClientOpts
   hls = {
     capabilities=capabilities,
     -- See nvim-lspconfig's  suggested configuration for keymaps, etc.
@@ -72,6 +73,7 @@ ht.setup {
     },
   },
 }
+
 -- Suggested keymaps that do not depend on haskell-language-server
 -- Toggle a GHCi repl for the current package
 vim.keymap.set('n', '<leader>rr', ht.repl.toggle, def_opts)
@@ -80,6 +82,7 @@ vim.keymap.set('n', '<leader>rf', function()
   ht.repl.toggle(vim.api.nvim_buf_get_name(0))
 end, def_opts)
 vim.keymap.set('n', '<leader>rq', ht.repl.quit, def_opts)
+vim.keymap.set('n', '<space>ca', vim.lsp.codelens.run, opts) 
 
 nvim_lsp.texlab.setup{
     capabilities = capabilities,

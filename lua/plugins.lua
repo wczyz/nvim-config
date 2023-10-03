@@ -310,13 +310,12 @@ use {
 }
 
 use {
-    'MrcJkb/haskell-tools.nvim',
+    'mrcjkb/haskell-tools.nvim',
     requires = {
         'neovim/nvim-lspconfig',
         'nvim-lua/plenary.nvim',
         'nvim-telescope/telescope.nvim',
-    },
-    config = get_config("haskell-tools")
+    }
 }
 
 -- TODO: ????
