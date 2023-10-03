@@ -73,6 +73,8 @@ nvim_lsp.pyright.setup{
 
 nvim_lsp.docker_compose_language_service.setup{}
 
+nvim_lsp.dockerls.setup{}
+
 -- nvim_lsp.hls.setup{
 --     capabilities = capabilities,
 -- }
@@ -123,7 +125,15 @@ nvim_lsp.texlab.setup{
 
 require('idris2').setup({})
 
-require('rust-tools').setup({})
+require('rust-tools').setup({
+    settings = {
+        ["rust-analyzer"] = {
+            diagnostics = {
+                disabled = {"unresolved-proc-macro"}
+            },
+        }
+    }
+})
 
 -- nvim_lsp.ltex.setup{}
 
