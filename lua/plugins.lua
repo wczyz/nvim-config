@@ -318,6 +318,11 @@ use {
     }
 }
 
+use {
+    'github/copilot.vim',
+    config = get_config("copilot")
+}
+
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim
 -- use 'glepnir/lspsaga.nvim'

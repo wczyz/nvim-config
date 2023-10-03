@@ -41,11 +41,8 @@ wk.register({
         }
     },
     c = {
-        name = "Cornelis",
-        l = {"<cmd>CornelisLoad<cr>", "Load"},
-        a = {"<cmd>CornelisGoals<cr>", "Show all goals"},
-        s = {"<cmd>CornelisSolve<cr>", "Solve"},
-        c = {"<cmd>CornelisMakeCase<cr>", "Split"},
+        name = "Github Copilot",
+        p = {"<cmd>Copilot panel<cr>", "Github Copilot Panel"},
     },
     f = {
         name = "Files",
