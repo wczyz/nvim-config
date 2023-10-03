@@ -71,6 +71,8 @@ nvim_lsp.pyright.setup{
     capabilities = capabilities,
 }
 
+nvim_lsp.docker_compose_language_service.setup{}
+
 -- nvim_lsp.hls.setup{
 --     capabilities = capabilities,
 -- }
