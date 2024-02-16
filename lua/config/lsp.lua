@@ -33,6 +33,8 @@ nvim_lsp.gopls.setup {
     }
 }
 
+nvim_lsp.elmls.setup{}
+
 local util = require 'lspconfig.util'
 local function get_typescript_server_path(root_dir)
 
