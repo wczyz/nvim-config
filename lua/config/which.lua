@@ -100,10 +100,10 @@ wk.register({
             "Checkout commit(for current file)"
         }
     },
-    -- h = {
-    --     name = "Haskell Tools",
-    --     a = {"<cmd>lua vim.lsp.codelens.run<cr>"},
-    -- },
+    h = {
+        name = "Haskell Tools",
+        p = {"<cmd>lua require('haskell-tools').repl.toggle()<cr>", "Toggle REPL for current package"},
+    },
     -- h = {
     --     name = "Harpoon",
     --     a = {"<cmd>lua require('harpoon.mark').add_file()<cr>", "Add file"},
