@@ -100,7 +100,7 @@ vim.g.haskell_tools = {
     end,
     settings = {
         haskell = {
-            formattingProvider = 'fourmolu'
+            formattingProvider = 'fourmolu',
         }
     },
   },

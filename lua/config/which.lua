@@ -9,6 +9,12 @@ wk.register({
     [";"] = {"<cmd>Telescope file_browser path=%:p:h<cr>", "File browser"},
 })
 
+local function SuggestOneWord()
+  local suggestion = vim.fn['copilot#Accept']("")
+  local bar = vim.fn['copilot#TextQueuedForInsertion']()
+  return vim.split(bar,  '[ .]\zs')[0]
+end
+
 -- Register all leader based mappings
 wk.register({
     ["<Tab>"] = {"<cmd>e#<cr>", "Switch to previously opened buffer"},
@@ -41,8 +47,21 @@ wk.register({
         }
     },
     c = {
-        name = "Github Copilot",
-        p = {"<cmd>Copilot panel<cr>", "Github Copilot Panel"},
+      name = "ChatGPT",
+        c = { "<cmd>ChatGPT<CR>", "ChatGPT" },
+        e = { "<cmd>ChatGPTEditWithInstruction<CR>", "Edit with instruction", mode = { "n", "v" } },
+        g = { "<cmd>ChatGPTRun grammar_correction<CR>", "Grammar Correction", mode = { "n", "v" } },
+        t = { "<cmd>ChatGPTRun translate<CR>", "Translate", mode = { "n", "v" } },
+        k = { "<cmd>ChatGPTRun keywords<CR>", "Keywords", mode = { "n", "v" } },
+        d = { "<cmd>ChatGPTRun docstring<CR>", "Docstring", mode = { "n", "v" } },
+        a = { "<cmd>ChatGPTRun add_tests<CR>", "Add Tests", mode = { "n", "v" } },
+        o = { "<cmd>ChatGPTRun optimize_code<CR>", "Optimize Code", mode = { "n", "v" } },
+        s = { "<cmd>ChatGPTRun summarize<CR>", "Summarize", mode = { "n", "v" } },
+        f = { "<cmd>ChatGPTRun fix_bugs<CR>", "Fix Bugs", mode = { "n", "v" } },
+        x = { "<cmd>ChatGPTRun explain_code<CR>", "Explain Code", mode = { "n", "v" } },
+        r = { "<cmd>ChatGPTRun roxygen_edit<CR>", "Roxygen Edit", mode = { "n", "v" } },
+        l = { "<cmd>ChatGPTRun code_readability_analysis<CR>", "Code Readability Analysis", mode = { "n", "v" } },
+        p = { "<cmd>ChatGPTComplete<CR>", "ChatGPT Complete", mode = { "n" } },
     },
     f = {
         name = "Files",
