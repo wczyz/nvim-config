@@ -229,8 +229,6 @@ use {"folke/which-key.nvim", event = "VimEnter", config = get_config("which")}
 
 --use {"folke/zen-mode.nvim", cmd = "ZenMode", config = get_config("zen-mode")}
 
---use {"folke/twilight.nvim", config = get_config("twilight")}
-
 --use {"tweekmonster/startuptime.vim"}
 
 --use {"xiyaowong/nvim-transparent", config = get_config("transparent")}
@@ -339,6 +337,27 @@ use({
       "nvim-telescope/telescope.nvim"
     }
 })
+
+use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  require("toggleterm").setup()
+end}
+
+use {
+  "folke/zen-mode.nvim",
+  config = function()
+    require("zen-mode").setup()
+  end
+}
+
+use {
+  "folke/trouble.nvim",
+  requires = {
+    "nvim-tree/nvim-web-devicons"
+  }
+}
+
+use {"folke/twilight.nvim"}
+
 
 -- TODO: ????
 -- https://github.com/glepnir/lspsaga.nvim

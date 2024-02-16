@@ -102,7 +102,14 @@ wk.register({
     },
     h = {
         name = "Haskell Tools",
-        p = {"<cmd>lua require('haskell-tools').repl.toggle()<cr>", "Toggle REPL for current package"},
+        p = {
+            "<cmd>lua require('haskell-tools').repl.toggle()<cr>",
+            "Toggle REPL for current package"
+        },
+        r = {
+            "<cmd>lua require('haskell-tools').repl.toggle(vim.fn.expand('%'))<cr>",
+             "Toggle REPL for current buffer"
+        },
     },
     -- h = {
     --     name = "Harpoon",
